@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <title>Ahmed Hussien | Social Contacts</title>
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/png">
+</head>
+<body>
+   <body>
+  <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+  <!-- Your HTML with inline animation delays -->
+<div class="container fade-down" style="animation-delay:100ms">
+  <div class="profile fade-down" style="animation-delay:200ms">
+    <img src="./assets/images/profile.jpg" alt="Ahmed Hussien">
+    <h3>Ahmed Hussien</h3>
+    <p>Passionate web &amp; app developer.</p>
+  </div>
+
+  <div class="links-list">
+    <a href="https://linkedin.com/in/ahmed-hussien-front-end-developer"
+       class="link fade-left" style="animation-delay:300ms" target="_blank">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn Profile</span>
+    </a>
+
+    <a href="https://ahmed-hussien-portfolio.netlify.app/"
+       class="link fade-right" style="animation-delay:400ms" target="_blank">
+      <i class="fas fa-user-circle"></i>
+      <span>Personal Portfolio</span>
+    </a>
+
+    <a href="https://github.com/Eng-Ahmed-Hussien"
+       class="link fade-left" style="animation-delay:500ms" target="_blank">
+      <i class="fab fa-github"></i>
+      <span>GitHub Profile</span>
+    </a>
+
+    <a href="https://facebook.com/ahmed.hussien"
+       class="link fade-right" style="animation-delay:600ms" target="_blank">
+      <i class="fab fa-facebook"></i>
+      <span>Facebook Profile</span>
+    </a>
+
+    <a href="https://instagram.com/moody13520"
+       class="link fade-left" style="animation-delay:700ms" target="_blank">
+      <i class="fab fa-instagram"></i>
+      <span>Instagram Profile</span>
+    </a>
+
+    <a href="https://t.me/moody1352"
+       class="link fade-right" style="animation-delay:800ms" target="_blank">
+      <i class="fab fa-telegram"></i>
+      <span>Telegram Account</span>
+    </a>
+
+    <a href="https://wa.me/201098909476"
+       class="link fade-left" style="animation-delay:900ms" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp Account</span>
+    </a>
+
+    <a href="https://wa.me/201284376285"
+       class="link fade-right" style="animation-delay:1000ms" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp Account2</span>
+    </a>
+
+    <a href="https://ahmed-hussien.netlify.app/"
+       class="link fade-left" style="animation-delay:1100ms" target="_blank">
+      <i class="fas fa-file-alt"></i>
+      <span>CV Portfolio</span>
+    </a>
+
+    <a href="mailto:ahmedhussien1352@gmail.com"
+       class="link fade-right" style="animation-delay:1200ms" target="_blank">
+      <i class="fas fa-envelope"></i>
+      <span>Professional Email</span>
+    </a>
+  </div>
+
+  <div class="contact zoom-in" style="animation-delay:1300ms">
+    <a href="https://wa.me/201098909476" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <a href="mailto:ahmedhussien1352@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/ahmed-hussien-front-end-developer" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://t.me/moody1352" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    <a href="https://instagram.com/moody13520" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+
+
+</div>
+<footer class="fade-up" style="animation-delay:1400ms">
+<p>&copy; <span class="footer-cp">Ahmed Hussien</span> | 2025</p>
+</footer>
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('theme-toggle');
+    const root = document.documentElement;
+    toggle.addEventListener('click', () => {
+      const newTheme = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      toggle.textContent = newTheme === 'light' ? '🌙' : '☀️';
+    });
+    // Initialize from preference or localStorage
+    const saved = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const theme = saved || (prefersDark ? 'dark' : 'light');
+    root.setAttribute('data-theme', theme);
+    toggle.textContent = theme === 'light' ? '🌙' : '☀️';
+  </script>
+</body>
+</body>
+</html>
